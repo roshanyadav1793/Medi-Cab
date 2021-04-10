@@ -1,0 +1,21 @@
+#Ca_main{
+    background-color: #080e32;
+}
+#Ca_main_section1{
+    width: 80%;
+    padding: 10% 0px;
+    margin: auto;
+}
+#ca_main_section1 img{
+    height: 300px !important;
+    width: 500px !important;
+}
+.slick-slider{
+    display: flex;
+}
+#Ca_img{
+    height: 300px !important;
+    width: 500px !important;
+    object-fit: contain;
+    margin: auto;
+}

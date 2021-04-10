@@ -1,0 +1,124 @@
+#Nav_main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: white;
+}
+#fl_left li{
+    margin: 0px 20px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    color: cadetblue;
+}
+#fl_center{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+#Nav_rotate{
+    transform: rotate();
+}
+#Nav_dropdown{
+    list-style: none;
+    display: none;  
+    position: absolute;  
+    box-shadow:  0px 0px 10px rgb(0 0 0 / 10%); 
+    background-color: white;
+}
+#Nav_dropdown li{
+    margin: 0px 25px!important;
+    text-align: center;
+    color: black;
+    padding: 6px 5px !important;
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+}
+#Nav_dropdown li:nth-last-of-type(1){
+    border: none !important;
+}
+
+#fl_center li{
+    margin:0px 35px;
+    cursor: pointer;
+    padding: 0px 17px;
+}
+#fl_center li:hover{
+    color: #00ACEE;
+    border-bottom: 3px solid coral;
+}
+#fl_center li:hover > #Nav_dropdown{
+    display: block;
+    padding: 0;
+
+}
+#fl_right{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 4px;
+}
+#fl_right li{
+    margin: 0px 20px;
+}
+#fl_right li:hover{
+    color: #00ACEE;
+}
+label {    
+    font-size: 26px;    
+    display: none;
+    float: right;
+	width: 100%;
+    margin: 0;
+    color: black;
+}
+#toggle {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+    #fl_right{
+        display: none !important;
+    }
+    label {
+        display: block;
+        cursor: pointer;
+		text-align: right;
+		padding: 5px;
+		width: auto;
+    }
+	
+    #fl_center {
+        /* text-align: right; */
+        width: 100%;
+        display: none;
+		margin-top: 4rem;
+    }
+    #fl_center li a {
+        display: block;
+        margin: 0;		
+     
+    }
+    #fl_center li{
+        margin: 10px 35px !important;
+    }
+	#Nav_dropdown{
+		position: inherit;
+        width: fit-content !important;
+        margin: 10px auto;
+        
+	}
+    #toggle:checked + #fl_center {
+        display: block;
+        position: absolute;
+             
+    }
+    
+	
+	#mainav ul li:hover > ul{visibility:visible; opacity:1;}   
+}
