@@ -1,12 +1,13 @@
 #Nav_main{
     display: flex;
     justify-content: space-between;
-    padding: 20px 5px;
+    padding: 20px 0px;
     width: 100%;
     position: absolute;
     top: 0;
     z-index: 2;
     background: white;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 #fl_left li{
     margin: 0px 20px;
