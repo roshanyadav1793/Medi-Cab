@@ -19,8 +19,8 @@ const Navbar=()=>{
                         <li>Diagnostic sets</li>
                     </ul>           
                 </li>                
-                <li><a>About Us</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="/contactus">Contact Us</a></li>
             </div>
             <div id="fl_right">
                 <li>Login/SignUp</li>
