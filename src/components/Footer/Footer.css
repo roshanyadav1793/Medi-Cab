@@ -1,30 +1,31 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
+/* #up_footer{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    background: #ede7f6;
-}
 
-footer{
-    position: relative;
+}
+#up_footer img{
+    height: 50px;
+    width: 20px;
+} */
+
+footer{    
     width: 100%;
+    margin: auto;
     height: auto;
-    padding: 50px 100px;
+    padding: 50px 0px;
     background: #111;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.quick_links,.info{
+    padding: 0 !important;
+}
+#remove_top_margin{
+    margin-top: 0;
+}
 footer .container{
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -62,6 +63,7 @@ footer  p{
 .sci{
     margin-top: 20px;
     display: flex;
+    padding: 0;
 }
 
 .sci li {
@@ -80,7 +82,17 @@ footer  p{
     border-radius: 4px;
     color: #fff;
 }
-.sci li a:hover{
+#sci_1:hover{
+    background-color: #3b5998;
+}
+#sci_2:hover{
+    background-color: #00ACEE;
+}
+#sci_3:hover{
+
+background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+#sci_4:hover{
     background-color: red;
 }
 .quickLinks {
@@ -137,7 +149,7 @@ footer  p{
 .copyrightText{
     width: 100%;
     background: #181818;
-    padding: 8px 100px;
+    padding: 8px 0px;
     text-align: center;
     color: #999;
 }
@@ -168,4 +180,42 @@ footer  p{
     padding-top: 70px;
     padding-bottom: 40px;
 }
-
+#details_banner{
+    background-color: #f7f8fa;
+    padding: 40px 0px 70px 0px;
+}
+#row_banner{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+#banner_item img{
+    width: 50px;
+    color: #2a96ff;
+}
+#banner_item{
+    border-right: 1px solid #e2e2e2;
+    padding:0px 20px 0px 0px;
+    display: flex;
+}
+#banner_item_serial h3{
+    margin: 0;
+    text-align: left;
+}
+#banner_item_serial p{
+    margin-bottom:0 ;
+    margin-top: 5px;
+}
+#banner_item_serial{
+    height: fit-content;
+    margin-top: 5%;
+}
+#banner_item img{
+    height: fit-content;
+    margin-top: 5%;
+    padding: 0px 15px 0px 0px;
+}
+#banner_item:nth-last-of-type(1){
+    border-right: none !important;
+}
