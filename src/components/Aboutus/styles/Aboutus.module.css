@@ -1,23 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-family: 'Poppins',sans-serif;
+}
 
-.about_page {
-    font-family: "Montserrat";
-    text-align: center;
-    background-color: #008b8b;
-    color: #fff;
-    min-height: 100vh;
-  }
-  
-  .h1 , .h2 {
-    font-weight: 700;
-    font-size: 3em;
-    text-align: center;
-    padding-top:8%;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
-  }
+body{
+  margin-top: 8%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+}
+.aboutus{
+  width: 100%;
+  min-height: 80vh;
+}
 
-  .section {
-    padding-top: 2%;
-    color: bisque;
+.aboutus h1{
+  text-align: center;
+  font-size: 40px;
+  color: #2b9ec2;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+}
+.aboutus h1::after{
+  content: "";
+  height: 5px;
+  width: 200px;
+  background-color: #2b9ec2;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.wrapper{
+  padding: 0px 60px;
+  margin: 60px auto;
+}
+.content{
+  width: 60%;
+  float: left;
+  text-align: left;
+  padding: 0px 30px;
+}
+.content h3{
+  color: #222;
+  letter-spacing:1px ;
+}
+
+.content p{
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #3d3d3d;
+  margin-top: 2opx;
+}
+.content .button {
+  margin-top: 40px;
+}
+.content .button a{
+  color: #fff;
+  background-color: #2b9ec2;
+  border: 1px solid #2b9ec2;
+  padding: 10px 35px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.content .button a:hover{
+  background-color: #fff;
+  color: #2b9ec2;
+}
+.content .social{
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.content .social a{
+  text-decoration: none;
+  color: #222;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.imageSection{
+  width: 40%;
+  float: right;
+  padding: 0px 30px;
+}
+.imageSection img{
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 900px) {
+  .aboutus{
+    width: 100%;
+    padding-top: 20px;
   }
+  .aboutus h1{
+    font-size: 32px;
+  }
+  .content{
+    width: 100%;
+    float: none;
+  }
+  .content .button{
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content .button a{
+    padding: 8px 25px;
+  }
+  .content .social a{
+    font-size: 21px;
+  }
+  .imageSection{
+    float: none;
+    width: 100%;
+    margin-top: 25px;
+  }
+}
