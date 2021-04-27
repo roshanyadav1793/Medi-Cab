@@ -23,7 +23,7 @@ const Navbar=()=>{
                 <li><a href="/contactus">Contact Us</a></li>
             </div>
             <div id="fl_right">
-                <li>Login/SignUp</li>
+                <li><a href="/Login">Login/SignUp</a></li>
             </div>
         </div>
     );
